@@ -317,6 +317,9 @@ function callTmapNavi(md){
 		alert('모바일기기에서만 가능합니다.');
 	}
 
+	
+
+window.onload = function () {
 	$('.js_lightgallery').masonry({
 		//columnWidth: .snsbbs_sections,
 		//isFitWidth : true,
@@ -325,6 +328,7 @@ function callTmapNavi(md){
 	}).on( 'layoutComplete', function() {
 	  return true;
 	});
+}	
 
     var closest = function closest(el, fn) {
       return el && (fn(el) ? el : closest(el.parentNode, fn));
